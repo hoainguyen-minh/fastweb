@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV của Christopher Nguyen</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 1rem; /* Rounded corners for the main container */
+        }
+        .section-title {
+            color: #1f2937; /* Darker text for titles */
+            border-bottom: 2px solid #3b82f6; /* Blue underline */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .job-title {
+            color: #1f2937;
+        }
+        .company-name {
+            color: #4b5563;
+        }
+        .duration {
+            color: #6b7280;
+        }
+        .skill-item {
+            background-color: #e0f2fe; /* Light blue background for skills */
+            color: #1e40af; /* Dark blue text for skills */
+            padding: 0.5rem 1rem;
+            border-radius: 9999px; /* Pill shape */
+        }
+        /* Custom styles for infographic-like elements */
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.25rem;
+            width: 0.75rem;
+            height: 0.75rem;
+            background-color: #3b82f6;
+            border-radius: 50%;
+            border: 2px solid #dbeafe;
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 0.35rem;
+            top: 1.25rem;
+            bottom: -1.5rem;
+            width: 2px;
+            background-color: #bfdbfe;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1rem;
+            }
+            .header-info {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header-info > div {
+                margin-bottom: 0.5rem;
+            }
+            .header-info a {
+                justify-content: center;
+            }
+            .skills-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust grid for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="mb-8 p-6 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-t-lg rounded-b-lg">
+            <div class="flex flex-col md:flex-row justify-between items-center header-info">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <h1 class="text-4xl font-bold mb-2">CHRISTOPHER NGUYEN</h1>
+                    <p class="text-xl font-medium">Chuyên viên Hỗ trợ IT phi lợi nhuận</p>
+                    <p class="text-lg">Thành phố Hồ Chí Minh, Việt Nam</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <a href="https://www.linkedin.com/in/christopher-nguyen-nonprofit-itsupport/details/experience/" target="_blank" class="flex items-center justify-center md:justify-end text-white hover:underline text-lg">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM12 16.5c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zM12 7.5c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zM20.5 20.5h-17v-17h17v17zM12 9.5c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Summary Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold section-title">TÓM TẮT BẢN THÂN</h2>
+            <p class="text-gray-700 leading-relaxed text-lg">
+                Chuyên gia IT giàu kinh nghiệm với hơn 15 năm trong việc quản lý hạ tầng, tối ưu hóa chi phí IT và triển khai các giải pháp công nghệ nhằm nâng cao hiệu quả hoạt động. Đã có kinh nghiệm làm việc trong nhiều lĩnh vực như phi lợi nhuận, tài chính, bán lẻ và công nghệ, luôn tìm kiếm cơ hội để áp dụng kiến thức và kỹ năng IT nhằm tạo ra giá trị bền vững.
+            </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold section-title">KINH NGHIỆM LÀM VIỆC</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+
+                <!-- Director of Business Development | Adtechconnect.com -->
+                <div class="timeline-item">
+                    <h3 class="text-xl font-semibold job-title">Director of Business Development</h3>
+                    <p class="text-lg company-name"><a href="https://www.adtechconnect.com" target="_blank" class="text-blue-600 hover:underline">Adtechconnect.com</a>, Thành phố Hồ Chí Minh, Việt Nam</p>
+                    <p class="duration text-base">01/2022 – Hiện tại (3 năm 5 tháng)</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-2 text-base">
+                        <li>Chuyển đổi số, giải quyết gốc rễ vấn đề kinh doanh, mang lại hiệu quả cao, chi phí hợp lý nhưng giá trị cao.</li>
+                        <li>Triển khai Google Workspace, Microsoft 365 & Teams Approvals, tư vấn dịch vụ Cloud và Internet.</li>
+                        <li>Triển khai CRM (Bitrix24 Cloud Platform) và CMS (Pioneer Deploy Website Cloud Platform Wordpress.com).</li>
+                        <li>SEO website & Digital marketing, triển khai Microsoft 365, Wordpress Website.</li>
+                    </ul>
+                </div>
+
+                <!-- Partnership | PLF Law Firm -->
+                <div class="timeline-item">
+                    <h3 class="text-xl font-semibold job-title">Partnership</h3>
+                    <p class="text-lg company-name"><a href="https://plf.vn" target="_blank" class="text-blue-600 hover:underline">PLF Law Firm</a>, Thành phố Hồ Chí Minh, Việt Nam</p>
+                    <p class="duration text-base">12/2023 – 12/2024 (1 năm 1 tháng)</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-2 text-base">
+                        <li>Chuyển đổi số, giải quyết triệt để vấn đề kinh doanh, mang lại hiệu quả cao, phù hợp chi phí thấp nhưng giá trị cao.</li>
+                        <li>Tham gia tư vấn về Doing Business in Vietnam, Mergers & Acquisitions, Corporate & Tax Advisory, Outsource In-house Counsel.</li>
+                    </ul>
+                </div>
+
+                <!-- Head of IT | MAIC GROUP -->
+                <div class="timeline-item">
+                    <h3 class="text-xl font-semibold job-title">Head of IT</h3>
+                    <p class="text-lg company-name"><a href="https://maicasia.com" target="_blank" class="text-blue-600 hover:underline">MAIC GROUP</a>, Thành phố Hồ Chí Minh, Việt Nam</p>
+                    <p class="duration text-base">10/2022 – 07/2023 (10 tháng)</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-2 text-base">
+                        <li>Đổi mới, Chuyển đổi, Cách mạng tập trung vào Cloud Computing.</li>
+                    </ul>
+                </div>
+
+                <!-- Information Technology Supervisor | Masan Consumer Holdings -->
+                <div class="timeline-item">
+                    <h3 class="text-xl font-semibold job-title">Information Technology Supervisor</h3>
+                    <p class="text-lg company-name">Masan Consumer Holdings, Thành phố Hồ Chí Minh, Việt Nam</p>
+                    <p class="duration text-base">01/2021 – 11/2021 (11 tháng)</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-2 text-base">
+                        <li>Quản lý dịch vụ Cloud và Internet.</li>
+                        <li>Tối ưu hóa và tiết kiệm chi phí vận hành IT.</li>
+                        <li>Kết nối IT với mục tiêu kinh doanh.</li>
+                        <li>Tham gia & Quản lý dự án: Bitrix Cloud Platform, Wordpress Cloud Platform, Cisco Meraki Cloud Network, Splunk Cloud Security, SEO Website.</li>
+                        <li>Triển khai dịch vụ IT chuyên nghiệp, bảo mật, tuân thủ.</li>
+                    </ul>
+                </div>
+
+                <!-- IT Support Specialist | Central Retail in Vietnam -->
+                <div class="timeline-item">
+                    <h3 class="text-xl font-semibold job-title">IT Support Specialist</h3>
+                    <p class="text-lg company-name">Central Retail in Vietnam, Việt Nam</p>
+                    <p class="duration text-base">06/2018 – 07/2020 (2 năm 2 tháng)</p>
+                </div>
+
+                <!-- IT Support Specialist | Big C Vietnam -->
+                <div class="timeline-item">
+                    <h3 class="text-xl font-semibold job-title">IT Support Specialist</h3>
+                    <p class="text-lg company-name">Big C Vietnam, Việt Nam</p>
+                    <p class="duration text-base">05/2012 – 07/2020 (8 năm 3 tháng)</p>
+                    <p class="text-gray-700 mt-2 text-base">
+                        (Lưu ý: Thời gian làm việc tại Central Retail và Big C có vẻ trùng lặp. Đã liệt kê riêng theo thông tin bạn cung cấp.)
+                    </p>
+                </div>
+
+                <!-- Information Technology Support Officer | J&J Johnson & Johnson -->
+                <div class="timeline-item">
+                    <h3 class="text-xl font-semibold job-title">Information Technology Support Officer</h3>
+                    <p class="text-lg company-name">J&amp;J Johnson & Johnson, Việt Nam</p>
+                    <p class="duration text-base">10/2010 – 05/2012 (1 năm 8 tháng)</p>
+                </div>
+
+                <!-- Freelance Information Technology Consultant | Freelancer.com -->
+                <div class="timeline-item">
+                    <h3 class="text-xl font-semibold job-title">Freelance Information Technology Consultant</h3>
+                    <p class="text-lg company-name">Freelancer.com, Việt Nam</p>
+                    <p class="duration text-base">06/2020 – 12/2020 (7 tháng)</p>
+                </div>
+
+                <!-- IT Infrastructure | Construction Bank Vietnam -->
+                <div class="timeline-item">
+                    <h3 class="text-xl font-semibold job-title">IT Infrastructure</h3>
+                    <p class="text-lg company-name">Construction Bank Vietnam, Việt Nam</p>
+                    <p class="duration text-base">09/2020 – 11/2020 (3 tháng)</p>
+                </div>
+
+                <!-- Blogger | Blogspot.com (Freelance) -->
+                <div class="timeline-item">
+                    <h3 class="text-xl font-semibold job-title">Blogger</h3>
+                    <p class="text-lg company-name">Blogspot.com (Freelance), Thành phố Hồ Chí Minh, Việt Nam</p>
+                    <p class="duration text-base">09/2023 – Hiện tại (1 năm 9 tháng)</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-2 text-base">
+                        <li>Triển khai Google Platform, WordPress.com, Microsoft 365, Best Practice SEO.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2 class="text-2xl font-semibold section-title">KỸ NĂNG</h2>
+            <div class="flex flex-wrap gap-3 skills-grid">
+                <span class="skill-item">Enterprise IT Infrastructure</span>
+                <span class="skill-item">Windows Server Active Directory</span>
+                <span class="skill-item">Microsoft 365</span>
+                <span class="skill-item">Google Workspace</span>
+                <span class="skill-item">Cloud Computing</span>
+                <span class="skill-item">VMware</span>
+                <span class="skill-item">Microsoft Azure</span>
+                <span class="skill-item">Google Cloud Platform (GCP)</span>
+                <span class="skill-item">Bitrix24 CRM</span>
+                <span class="skill-item">Wordpress.com</span>
+                <span class="skill-item">SEO (Search Engine Optimization)</span>
+                <span class="skill-item">Cloud Storage</span>
+                <span class="skill-item">Digital Marketing</span>
+                <span class="skill-item">Technical Documentation</span>
+                <span class="skill-item">IT Cost Optimization</span>
+                <span class="skill-item">Project Management</span>
+                <span class="skill-item">Digital Transformation</span>
+                <span class="skill-item">Customer Relationship Management (CRM)</span>
+                <span class="skill-item">Budget Management</span>
+                <span class="skill-item">Agile Methodologies</span>
+                <span class="skill-item">IT Management</span>
+                <span class="skill-item">Technology Consulting</span>
+                <span class="skill-item">Hardware Installation</span>
+                <span class="skill-item">Service Desk</span>
+                <span class="skill-item">Troubleshooting</span>
+                <span class="skill-item">New Business Development</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
